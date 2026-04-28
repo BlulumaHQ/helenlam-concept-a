@@ -29,14 +29,18 @@ export const Route = createRootRoute({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Helen Lam - Personal Real Estate Corp." },
+      { name: "description", content: "Work with Helen Lam — a trusted real estate professional delivering proven marketing, sharp negotiation, and personalized service from search to sold." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Helen Lam - Personal Real Estate Corp." },
+      { property: "og:description", content: "Work with Helen Lam — a trusted real estate professional delivering proven marketing, sharp negotiation, and personalized service from search to sold." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Helen Lam - Personal Real Estate Corp." },
+      { name: "twitter:description", content: "Work with Helen Lam — a trusted real estate professional delivering proven marketing, sharp negotiation, and personalized service from search to sold." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5c127deb-f80d-45c9-9d4c-ad3b7d4076df/id-preview-0d74f0d1--2a2216a9-46a4-4c50-ba0a-687891e3f032.lovable.app-1777419938055.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/5c127deb-f80d-45c9-9d4c-ad3b7d4076df/id-preview-0d74f0d1--2a2216a9-46a4-4c50-ba0a-687891e3f032.lovable.app-1777419938055.png" },
     ],
     links: [
       {
