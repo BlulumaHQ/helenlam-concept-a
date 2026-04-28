@@ -10,7 +10,7 @@ export function Process() {
     <section id="process" className="py-24 bg-ink text-white">
       <div className="container-luxury">
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="text-brand uppercase tracking-[0.3em] text-xs">Process</span>
+          <span className="inline-flex items-center gap-2 text-brand-light uppercase tracking-eyebrow text-[11px] font-medium"><span className="h-px w-10 bg-brand-light" />Process</span>
           <h2 className="text-4xl md:text-5xl mt-4">How It Works</h2>
         </div>
         <div className="grid md:grid-cols-4 gap-8">
@@ -23,7 +23,7 @@ export function Process() {
           ))}
         </div>
         <div className="text-center mt-16">
-          <a href="#lead-capture" className="inline-flex items-center justify-center gradient-brand text-ink font-semibold px-8 py-4 rounded-md hover:opacity-90 transition-smooth">
+          <a href="#lead-capture" className="inline-flex items-center justify-center gradient-brand text-white font-semibold px-8 py-4 rounded-md hover:opacity-90 transition-smooth">
             Book Your Consultation
           </a>
         </div>

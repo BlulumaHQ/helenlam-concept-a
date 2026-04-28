@@ -13,7 +13,7 @@ export function SellerHook() {
               Recent trends and home sales give an accurate analysis of your home's worth.
               Find out what you could list your home at — no obligation.
             </p>
-            <a href="#contact" className="inline-flex items-center justify-center gradient-brand text-ink font-semibold px-10 py-5 rounded-md hover:opacity-90 transition-smooth shadow-luxury text-lg">
+            <a href="#contact" className="inline-flex items-center justify-center gradient-brand text-white font-semibold px-10 py-5 rounded-md hover:opacity-90 transition-smooth shadow-luxury text-lg">
               Get Free Home Evaluation
             </a>
           </div>

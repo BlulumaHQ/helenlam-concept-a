@@ -34,9 +34,9 @@ export function LeadCapture() {
       <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 20% 50%, var(--gold) 0%, transparent 40%)" }} />
       <div className="container-luxury relative grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <span className="text-brand uppercase tracking-[0.3em] text-xs">Insider Access</span>
+          <span className="inline-flex items-center gap-2 text-brand-light uppercase tracking-eyebrow text-[11px] font-medium"><span className="h-px w-10 bg-brand-light" />Insider Access</span>
           <h2 className="text-4xl md:text-5xl mt-4 mb-6 leading-tight">
-            Get Exclusive Listings <span className="text-brand">Before They Hit</span> the Market
+            Get Exclusive Listings <span className="text-brand-light">Before They Hit</span> the Market
           </h2>
           <p className="text-white/75 text-lg leading-relaxed">
             Gain early access to properties, off-market opportunities, and expert insights
@@ -46,12 +46,12 @@ export function LeadCapture() {
         <form onSubmit={handleSubmit} className="bg-white text-ink p-8 rounded-lg shadow-luxury space-y-4">
           <h3 className="text-2xl mb-2">Unlock Listings</h3>
           <input name="name" placeholder="Full Name" required maxLength={100}
-            className="w-full px-4 py-3 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-gold" />
+            className="w-full px-4 py-3 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-brand" />
           <input name="email" type="email" placeholder="Email Address" required maxLength={255}
-            className="w-full px-4 py-3 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-gold" />
+            className="w-full px-4 py-3 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-brand" />
           <input name="phone" type="tel" placeholder="Phone (optional)" maxLength={30}
-            className="w-full px-4 py-3 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-gold" />
-          <button type="submit" className="w-full gradient-brand text-ink font-semibold py-4 rounded-md hover:opacity-90 transition-smooth">
+            className="w-full px-4 py-3 border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-brand" />
+          <button type="submit" className="w-full gradient-brand text-white font-semibold py-4 rounded-md hover:opacity-90 transition-smooth">
             Unlock Listings
           </button>
           {status === "success" && <p className="text-sm text-green-700">Thank you — Helen will be in touch within 24 hours.</p>}

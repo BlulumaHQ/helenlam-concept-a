@@ -54,7 +54,7 @@ export function Listings() {
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img src={l.img} alt={l.address} loading="lazy" className="h-full w-full object-cover group-hover:scale-105 transition-smooth" />
                 <span className="absolute top-3 left-3 bg-ink text-white text-xs uppercase tracking-wider px-3 py-1 rounded">{l.tag}</span>
-                <span className="absolute bottom-3 right-3 gradient-brand text-ink font-semibold px-3 py-1 rounded text-sm">{l.price}</span>
+                <span className="absolute bottom-3 right-3 gradient-brand text-white font-semibold px-3 py-1 rounded text-sm">{l.price}</span>
               </div>
               <div className="p-5">
                 <h3 className="text-xl mb-1">{l.address}</h3>

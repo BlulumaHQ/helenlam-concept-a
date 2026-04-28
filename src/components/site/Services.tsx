@@ -39,7 +39,7 @@ export function Services() {
                 </li>
               ))}
             </ul>
-            <a href="#evaluation" className="inline-flex items-center justify-center w-full gradient-brand text-ink font-semibold py-3 rounded-md hover:opacity-90 transition-smooth">
+            <a href="#evaluation" className="inline-flex items-center justify-center w-full gradient-brand text-white font-semibold py-3 rounded-md hover:opacity-90 transition-smooth">
               Get My Home Value →
             </a>
           </div>

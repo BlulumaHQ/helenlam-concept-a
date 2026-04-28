@@ -64,11 +64,11 @@ export function Contact() {
         <form onSubmit={handleSubmit} className="bg-secondary p-8 rounded-lg space-y-4">
           <h3 className="text-2xl mb-2">Send a Message</h3>
           <input name="name" placeholder="Name" required maxLength={100}
-            className="w-full px-4 py-3 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-gold" />
+            className="w-full px-4 py-3 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-brand" />
           <input name="email" type="email" placeholder="Email" required maxLength={255}
-            className="w-full px-4 py-3 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-gold" />
+            className="w-full px-4 py-3 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-brand" />
           <textarea name="message" placeholder="How can Helen help?" required rows={5} maxLength={1000}
-            className="w-full px-4 py-3 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-gold resize-none" />
+            className="w-full px-4 py-3 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-brand resize-none" />
           <button type="submit" className="w-full bg-ink text-white font-semibold py-4 rounded-md hover:opacity-90 transition-smooth">
             Send Message
           </button>
