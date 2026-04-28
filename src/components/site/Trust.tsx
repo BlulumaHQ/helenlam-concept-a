@@ -9,14 +9,14 @@ export function Trust() {
           <img src={portrait} alt="Helen Lam, Personal Real Estate Corporation" loading="lazy" width={800} height={1024}
             className="rounded-lg shadow-luxury w-full max-w-md" />
           <div className="absolute -bottom-6 -right-6 bg-ink text-white p-6 rounded-lg shadow-luxury max-w-[220px] hidden md:block">
-            <div className="flex gap-1 text-gold mb-2">
-              {[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-gold" />)}
+            <div className="flex gap-1 text-brand mb-2">
+              {[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-brand" />)}
             </div>
             <p className="text-sm">"Utmost personal service — what matters most is your satisfaction."</p>
           </div>
         </div>
         <div>
-          <span className="text-gold uppercase tracking-[0.3em] text-xs">Why Clients Choose Helen</span>
+          <span className="text-brand uppercase tracking-[0.3em] text-xs">Why Clients Choose Helen</span>
           <h2 className="text-4xl md:text-5xl mt-4 mb-6">Trusted by Buyers and Sellers Across Greater Vancouver</h2>
           <p className="text-muted-foreground text-lg mb-10 leading-relaxed">
             Helen prides herself on giving every client utmost personal service. The result is a
@@ -31,10 +31,10 @@ export function Trust() {
             ].map(({i:Icon,t,d})=>(
               <div key={t} className="flex gap-4">
                 <div className="w-10 h-10 rounded-md bg-accent flex items-center justify-center shrink-0">
-                  <Icon className="h-5 w-5 text-gold" />
+                  <Icon className="h-5 w-5 text-brand" />
                 </div>
                 <div>
-                  <h4 className="font-display text-lg mb-1">{t}</h4>
+                  <h4 className="text-lg mb-1">{t}</h4>
                   <p className="text-sm text-muted-foreground">{d}</p>
                 </div>
               </div>

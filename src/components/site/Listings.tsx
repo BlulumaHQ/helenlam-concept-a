@@ -41,10 +41,10 @@ export function Listings() {
       <div className="container-luxury">
         <div className="flex items-end justify-between flex-wrap gap-4 mb-12">
           <div>
-            <span className="text-gold uppercase tracking-[0.3em] text-xs">Featured Listings</span>
+            <span className="text-brand uppercase tracking-[0.3em] text-xs">Featured Listings</span>
             <h2 className="text-4xl md:text-5xl mt-4">Handpicked Homes Across Greater Vancouver</h2>
           </div>
-          <a href="#lead-capture" className="text-ink font-semibold border-b-2 border-gold pb-1 hover:text-gold transition-smooth">
+          <a href="#lead-capture" className="text-ink font-semibold border-b-2 border-brand pb-1 hover:text-brand transition-smooth">
             See All Available Properties →
           </a>
         </div>
@@ -54,15 +54,15 @@ export function Listings() {
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img src={l.img} alt={l.address} loading="lazy" className="h-full w-full object-cover group-hover:scale-105 transition-smooth" />
                 <span className="absolute top-3 left-3 bg-ink text-white text-xs uppercase tracking-wider px-3 py-1 rounded">{l.tag}</span>
-                <span className="absolute bottom-3 right-3 gradient-gold text-ink font-semibold px-3 py-1 rounded text-sm">{l.price}</span>
+                <span className="absolute bottom-3 right-3 gradient-brand text-ink font-semibold px-3 py-1 rounded text-sm">{l.price}</span>
               </div>
               <div className="p-5">
-                <h3 className="font-display text-xl mb-1">{l.address}</h3>
+                <h3 className="text-xl mb-1">{l.address}</h3>
                 <p className="flex items-center gap-1 text-sm text-muted-foreground mb-3">
                   <MapPin className="h-3 w-3" />{l.city}
                 </p>
                 <p className="text-sm text-foreground/80 line-clamp-3 mb-4">{l.blurb}</p>
-                <a href="#contact" className="text-sm font-semibold text-ink hover:text-gold transition-smooth">View Details →</a>
+                <a href="#contact" className="text-sm font-semibold text-ink hover:text-brand transition-smooth">View Details →</a>
               </div>
             </article>
           ))}
