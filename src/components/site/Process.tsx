@@ -16,8 +16,8 @@ export function Process() {
         <div className="grid md:grid-cols-4 gap-8">
           {steps.map((s) => (
             <div key={s.n} className="relative">
-              <div className="text-brand text-5xl mb-4">{s.n}</div>
-              <h3 className="text-2xl mb-2">{s.t}</h3>
+              <div className="text-brand-light text-5xl mb-4 font-semibold tracking-display">{s.n}</div>
+              <h3 className="text-2xl mb-2 font-semibold tracking-display">{s.t}</h3>
               <p className="text-white/70 leading-relaxed">{s.d}</p>
             </div>
           ))}
