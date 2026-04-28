@@ -1,29 +1,29 @@
 const steps = [
-  { n: "01", t: "Consultation", d: "We start with a clear conversation about your goals, timeline, and budget." },
-  { n: "02", t: "Search or Strategy", d: "Buyers get a curated home search. Sellers get a custom listing & marketing plan." },
-  { n: "03", t: "Negotiation", d: "Sharp, data-driven negotiation to protect your interests and maximize value." },
-  { n: "04", t: "Closing", d: "End-to-end coordination with lawyers, lenders and inspectors — keys in hand." },
+  { n: "01", t: "Consultation", d: "A clear conversation about your goals, timeline, and budget." },
+  { n: "02", t: "Strategy", d: "A custom buying plan or tailored listing & marketing approach." },
+  { n: "03", t: "Execution", d: "Sharp, data-driven negotiation that protects your interests." },
+  { n: "04", t: "Closing", d: "End-to-end coordination with lawyers, lenders and inspectors." },
 ];
 
 export function Process() {
   return (
-    <section id="process" className="py-24 bg-ink text-white">
+    <section id="process" className="section-pad bg-ink text-white">
       <div className="container-luxury">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <span className="inline-flex items-center gap-2 text-brand-light uppercase tracking-eyebrow text-[11px] font-medium"><span className="h-px w-10 bg-brand-light" />Process</span>
-          <h2 className="text-4xl md:text-5xl mt-4">How It Works</h2>
+        <div className="text-center max-w-2xl mx-auto mb-20">
+          <span className="text-gold uppercase tracking-eyebrow text-xs">Process</span>
+          <h2 className="font-serif text-4xl md:text-5xl mt-4">A Simple, Guided Process</h2>
         </div>
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-4 gap-10">
           {steps.map((s) => (
-            <div key={s.n} className="relative">
-              <div className="text-brand-light text-5xl mb-4 font-semibold tracking-display">{s.n}</div>
-              <h3 className="text-2xl mb-2 font-semibold tracking-display">{s.t}</h3>
-              <p className="text-white/70 leading-relaxed">{s.d}</p>
+            <div key={s.n} className="relative pt-8 border-t border-white/15">
+              <div className="text-gold font-serif text-2xl mb-6 tracking-wide">{s.n}</div>
+              <h3 className="font-serif text-3xl mb-3">{s.t}</h3>
+              <p className="text-white/70 leading-relaxed font-light">{s.d}</p>
             </div>
           ))}
         </div>
-        <div className="text-center mt-16">
-          <a href="#lead-capture" className="inline-flex items-center justify-center gradient-brand text-white font-semibold px-8 py-4 rounded-md hover:opacity-90 transition-smooth">
+        <div className="text-center mt-20">
+          <a href="#lead-capture" className="inline-flex items-center justify-center bg-gold text-ink font-semibold px-9 py-4 rounded-sm hover:opacity-90 transition-smooth">
             Book Your Consultation
           </a>
         </div>

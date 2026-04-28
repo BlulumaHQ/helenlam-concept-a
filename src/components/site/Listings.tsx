@@ -37,32 +37,32 @@ const listings = [
 
 export function Listings() {
   return (
-    <section id="listings" className="py-24 bg-secondary">
+    <section id="listings" className="section-pad bg-secondary">
       <div className="container-luxury">
-        <div className="flex items-end justify-between flex-wrap gap-4 mb-12">
-          <div>
-            <span className="text-brand uppercase tracking-[0.3em] text-xs">Featured Listings</span>
-            <h2 className="text-4xl md:text-5xl mt-4">Handpicked Homes Across Greater Vancouver</h2>
+        <div className="flex items-end justify-between flex-wrap gap-6 mb-16">
+          <div className="max-w-2xl">
+            <span className="text-brand uppercase tracking-eyebrow text-xs">Featured Listings</span>
+            <h2 className="font-serif text-4xl md:text-5xl mt-4">Handpicked Homes Across Greater Vancouver</h2>
           </div>
-          <a href="#lead-capture" className="text-ink font-semibold border-b-2 border-brand pb-1 hover:text-brand transition-smooth">
-            See All Available Properties →
+          <a href="#lead-capture" className="text-ink font-semibold border-b border-gold pb-1 hover:text-brand-mid transition-smooth tracking-wide">
+            Browse More Listings →
           </a>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {listings.map((l) => (
-            <article key={l.address} className="group bg-card rounded-lg overflow-hidden shadow-card hover:shadow-luxury transition-smooth">
+            <article key={l.address} className="group bg-card rounded-sm overflow-hidden shadow-card hover:shadow-luxury transition-smooth">
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img src={l.img} alt={l.address} loading="lazy" className="h-full w-full object-cover group-hover:scale-105 transition-smooth" />
-                <span className="absolute top-3 left-3 bg-ink text-white text-xs uppercase tracking-wider px-3 py-1 rounded">{l.tag}</span>
-                <span className="absolute bottom-3 right-3 gradient-brand text-white font-semibold px-3 py-1 rounded text-sm">{l.price}</span>
+                <span className="absolute top-3 left-3 bg-ink text-gold text-[10px] uppercase tracking-eyebrow px-3 py-1 rounded-sm">{l.tag}</span>
+                <span className="absolute bottom-3 right-3 bg-gold text-ink font-semibold px-3 py-1 rounded-sm text-sm">{l.price}</span>
               </div>
-              <div className="p-5">
-                <h3 className="text-xl mb-1">{l.address}</h3>
+              <div className="p-6">
+                <h3 className="font-serif text-xl mb-1 leading-tight">{l.address}</h3>
                 <p className="flex items-center gap-1 text-sm text-muted-foreground mb-3">
                   <MapPin className="h-3 w-3" />{l.city}
                 </p>
-                <p className="text-sm text-foreground/80 line-clamp-3 mb-4">{l.blurb}</p>
-                <a href="#contact" className="text-sm font-semibold text-ink hover:text-brand transition-smooth">View Details →</a>
+                <p className="text-sm text-foreground/75 line-clamp-3 mb-5 font-light">{l.blurb}</p>
+                <a href="#contact" className="text-sm font-semibold text-ink hover:text-brand-mid transition-smooth tracking-wide">View Property →</a>
               </div>
             </article>
           ))}

@@ -7,8 +7,8 @@ export function Footer() {
       <div className="container-luxury">
         <div className="grid md:grid-cols-12 gap-10 mb-12">
           <div className="md:col-span-5">
-            <h3 className="text-white text-2xl tracking-display font-semibold">HELEN LAM</h3>
-            <p className="text-xs text-brand-light uppercase tracking-eyebrow mt-1 mb-5">Personal Real Estate Corporation</p>
+            <h3 className="font-serif text-white text-3xl tracking-display">Helen Lam</h3>
+            <p className="text-xs text-gold uppercase tracking-eyebrow mt-2 mb-6">Personal Real Estate Corporation</p>
             <p className="text-sm leading-relaxed max-w-md mb-6 font-light">
               Trusted real estate professional serving Vancouver, Richmond, Burnaby and Coquitlam — every step of the way.
             </p>
@@ -19,19 +19,20 @@ export function Footer() {
           <div className="md:col-span-3">
             <h4 className="text-white text-xs uppercase tracking-eyebrow mb-5 font-semibold">Navigate</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="#listings" className="hover:text-brand-light transition-smooth">Listings</a></li>
-              <li><a href="#services" className="hover:text-brand-light transition-smooth">Services</a></li>
-              <li><a href="#process" className="hover:text-brand-light transition-smooth">Process</a></li>
-              <li><a href="#evaluation" className="hover:text-brand-light transition-smooth">Home Evaluation</a></li>
-              <li><a href="#contact" className="hover:text-brand-light transition-smooth">Contact</a></li>
+              <li><a href="#listings" className="hover:text-gold transition-smooth">Listings</a></li>
+              <li><a href="#services" className="hover:text-gold transition-smooth">Services</a></li>
+              <li><a href="#about" className="hover:text-gold transition-smooth">About</a></li>
+              <li><a href="#process" className="hover:text-gold transition-smooth">Process</a></li>
+              <li><a href="#evaluation" className="hover:text-gold transition-smooth">Home Evaluation</a></li>
+              <li><a href="#contact" className="hover:text-gold transition-smooth">Contact</a></li>
             </ul>
           </div>
           <div className="md:col-span-4">
             <h4 className="text-white text-xs uppercase tracking-eyebrow mb-5 font-semibold">Contact</h4>
             <ul className="space-y-3 text-sm">
-              <li><a href="tel:778-889-6084" className="hover:text-brand-light transition-smooth">Cell: 778-889-6084</a></li>
+              <li><a href="tel:778-889-6084" className="hover:text-gold transition-smooth">Cell: 778-889-6084</a></li>
               <li>Office: 604-999-8882</li>
-              <li><a href="mailto:sold@helenlam.ca" className="hover:text-brand-light transition-smooth">sold@helenlam.ca</a></li>
+              <li><a href="mailto:sold@helenlam.ca" className="hover:text-gold transition-smooth">sold@helenlam.ca</a></li>
               <li className="leading-relaxed">#215-8600 Cambie Rd<br />Richmond, BC V6X 4J8</li>
             </ul>
           </div>
