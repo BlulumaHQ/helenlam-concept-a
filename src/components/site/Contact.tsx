@@ -24,33 +24,33 @@ export function Contact() {
     <section id="contact" className="py-24 bg-background">
       <div className="container-luxury grid lg:grid-cols-2 gap-16">
         <div>
-          <span className="text-gold uppercase tracking-[0.3em] text-xs">Get In Touch</span>
+          <span className="text-brand uppercase tracking-[0.3em] text-xs">Get In Touch</span>
           <h2 className="text-4xl md:text-5xl mt-4 mb-6">Let's Start the Conversation</h2>
           <p className="text-muted-foreground text-lg mb-10">
             Whether you're buying, selling, or simply exploring options — Helen is here to help.
           </p>
           <div className="space-y-6">
             <a href="tel:778-889-6084" className="flex items-center gap-4 group">
-              <div className="w-12 h-12 rounded-md gradient-gold flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 rounded-md gradient-brand flex items-center justify-center shrink-0">
                 <Phone className="h-5 w-5 text-ink" />
               </div>
               <div>
                 <p className="text-xs text-muted-foreground uppercase tracking-wider">Cell</p>
-                <p className="text-lg font-medium group-hover:text-gold transition-smooth">778-889-6084</p>
+                <p className="text-lg font-medium group-hover:text-brand transition-smooth">778-889-6084</p>
                 <p className="text-xs text-muted-foreground">Office: 604-999-8882</p>
               </div>
             </a>
             <a href="mailto:sold@helenlam.ca" className="flex items-center gap-4 group">
-              <div className="w-12 h-12 rounded-md gradient-gold flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 rounded-md gradient-brand flex items-center justify-center shrink-0">
                 <Mail className="h-5 w-5 text-ink" />
               </div>
               <div>
                 <p className="text-xs text-muted-foreground uppercase tracking-wider">Email</p>
-                <p className="text-lg font-medium group-hover:text-gold transition-smooth">sold@helenlam.ca</p>
+                <p className="text-lg font-medium group-hover:text-brand transition-smooth">sold@helenlam.ca</p>
               </div>
             </a>
             <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-md gradient-gold flex items-center justify-center shrink-0">
+              <div className="w-12 h-12 rounded-md gradient-brand flex items-center justify-center shrink-0">
                 <MapPin className="h-5 w-5 text-ink" />
               </div>
               <div>
@@ -62,13 +62,13 @@ export function Contact() {
           </div>
         </div>
         <form onSubmit={handleSubmit} className="bg-secondary p-8 rounded-lg space-y-4">
-          <h3 className="font-display text-2xl mb-2">Send a Message</h3>
+          <h3 className="text-2xl mb-2">Send a Message</h3>
           <input name="name" placeholder="Name" required maxLength={100}
-            className="w-full px-4 py-3 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-gold" />
+            className="w-full px-4 py-3 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-brand" />
           <input name="email" type="email" placeholder="Email" required maxLength={255}
-            className="w-full px-4 py-3 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-gold" />
+            className="w-full px-4 py-3 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-brand" />
           <textarea name="message" placeholder="How can Helen help?" required rows={5} maxLength={1000}
-            className="w-full px-4 py-3 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-gold resize-none" />
+            className="w-full px-4 py-3 bg-background border border-border rounded-md focus:outline-none focus:ring-2 focus:ring-brand resize-none" />
           <button type="submit" className="w-full bg-ink text-white font-semibold py-4 rounded-md hover:opacity-90 transition-smooth">
             Send Message
           </button>
