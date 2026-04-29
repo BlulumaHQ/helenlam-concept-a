@@ -223,6 +223,6 @@ export const translations = {
       copyright: "Helen Lam Personal Real Estate Corporation · 1NE Collective Realty Inc.",
     },
   },
-} as const;
+};
 
 export type Translation = typeof translations.en;
