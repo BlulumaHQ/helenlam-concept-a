@@ -2,17 +2,15 @@ import { Link } from "@tanstack/react-router";
 import { Phone } from "lucide-react";
 import { useT } from "@/i18n/LanguageContext";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import logoLight from "@/assets/helen-lam-logo-light.png";
 
 export function Navbar() {
   const { t } = useT();
   return (
     <header className="absolute top-0 left-0 right-0 z-50">
       <div className="container-luxury flex items-center justify-between py-5">
-        <Link to="/" className="flex items-center gap-3">
-          <div>
-            <div className="font-serif text-white text-2xl tracking-display leading-none">Helen Lam</div>
-            <div className="text-[10px] text-gold tracking-eyebrow uppercase mt-1.5">Personal Real Estate Corp.</div>
-          </div>
+        <Link to="/" className="flex items-center" aria-label="Helen Lam Real Estate">
+          <img src={logoLight} alt="Helen Lam Real Estate" className="h-14 md:h-16 w-auto" />
         </Link>
         <nav className="hidden md:flex items-center gap-10 text-sm font-medium text-white/90">
           <a href="#listings" className="hover:text-gold transition-smooth">{t.nav.listings}</a>
