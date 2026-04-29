@@ -1,4 +1,5 @@
 import logo from "@/assets/1ne-collective-logo.png";
+import helenLogo from "@/assets/helen-lam-logo-light.png";
 import mls from "@/assets/mls-reciprocity.gif";
 import { useT } from "@/i18n/LanguageContext";
 
