@@ -1,13 +1,15 @@
 import { useState } from "react";
 import { z } from "zod";
+import { useT } from "@/i18n/LanguageContext";
 
 const schema = z.object({
-  name: z.string().trim().min(1, "Name required").max(100),
-  email: z.string().trim().email("Valid email required").max(255),
+  name: z.string().trim().min(1).max(100),
+  email: z.string().trim().email().max(255),
   phone: z.string().trim().max(30).optional().or(z.literal("")),
 });
 
 export function LeadCapture() {
+  const { t } = useT();
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
   const [error, setError] = useState("");
 
@@ -31,38 +33,32 @@ export function LeadCapture() {
 
   return (
     <section id="lead-capture" className="relative bg-ink text-white section-pad overflow-hidden">
-      <div
-        className="absolute inset-0 opacity-15"
-        style={{ backgroundImage: "radial-gradient(circle at 20% 50%, var(--gold) 0%, transparent 40%)" }}
-      />
+      <div className="absolute inset-0 opacity-15" style={{ backgroundImage: "radial-gradient(circle at 20% 50%, var(--gold) 0%, transparent 40%)" }} />
       <div className="container-luxury relative grid md:grid-cols-2 gap-16 items-center">
         <div>
           <span className="inline-flex items-center gap-3 text-gold uppercase tracking-eyebrow text-[11px] font-medium">
             <span className="h-px w-12 bg-gold" />
-            Insider Access
+            {t.lead.eyebrow}
           </span>
           <h2 className="font-serif text-4xl md:text-6xl mt-6 mb-6 leading-[1.05]">
-            Get Exclusive Listings <span className="italic text-gold">Before They Hit</span> the Market
+            {t.lead.title1}<span className="italic text-gold">{t.lead.titleAccent}</span>{t.lead.title2}
           </h2>
-          <p className="text-white/75 text-lg leading-relaxed font-light">
-            Gain early access to off-market homes, new listings, and expert insights
-            tailored to your needs.
-          </p>
+          <p className="text-white/75 text-lg leading-relaxed font-light">{t.lead.sub}</p>
         </div>
         <form onSubmit={handleSubmit} className="bg-white text-ink p-10 rounded-sm shadow-luxury space-y-4">
-          <h3 className="font-serif text-3xl mb-4">Unlock Listings</h3>
-          <input name="name" placeholder="Full Name" required maxLength={100}
+          <h3 className="font-serif text-3xl mb-4">{t.lead.formTitle}</h3>
+          <input name="name" placeholder={t.lead.name} required maxLength={100}
             className="w-full px-4 py-3 border border-border rounded-sm focus:outline-none focus:ring-2 focus:ring-brand bg-background" />
-          <input name="email" type="email" placeholder="Email Address" required maxLength={255}
+          <input name="email" type="email" placeholder={t.lead.email} required maxLength={255}
             className="w-full px-4 py-3 border border-border rounded-sm focus:outline-none focus:ring-2 focus:ring-brand bg-background" />
-          <input name="phone" type="tel" placeholder="Phone (optional)" maxLength={30}
+          <input name="phone" type="tel" placeholder={t.lead.phone} maxLength={30}
             className="w-full px-4 py-3 border border-border rounded-sm focus:outline-none focus:ring-2 focus:ring-brand bg-background" />
           <button type="submit" className="w-full bg-ink text-white font-semibold py-4 rounded-sm hover:bg-brand-mid transition-smooth tracking-wide">
-            Unlock Exclusive Listings
+            {t.lead.submit}
           </button>
-          {status === "success" && <p className="text-sm text-green-700">Thank you — Helen will be in touch within 24 hours.</p>}
+          {status === "success" && <p className="text-sm text-green-700">{t.lead.success}</p>}
           {status === "error" && <p className="text-sm text-destructive">{error}</p>}
-          <p className="text-xs text-muted-foreground text-center">Your information is private and never shared.</p>
+          <p className="text-xs text-muted-foreground text-center">{t.lead.privacy}</p>
         </form>
       </div>
     </section>

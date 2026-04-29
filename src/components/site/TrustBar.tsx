@@ -1,13 +1,14 @@
 import { ShieldCheck, MapPinned, Sparkles, Handshake } from "lucide-react";
-
-const items = [
-  { i: ShieldCheck, t: "Trusted by Local Buyers & Sellers" },
-  { i: Sparkles, t: "Personalized Service" },
-  { i: MapPinned, t: "Local Market Expertise" },
-  { i: Handshake, t: "Skilled Negotiation" },
-];
+import { useT } from "@/i18n/LanguageContext";
 
 export function TrustBar() {
+  const { t } = useT();
+  const items = [
+    { i: ShieldCheck, t: t.trustBar.a },
+    { i: Sparkles, t: t.trustBar.b },
+    { i: MapPinned, t: t.trustBar.c },
+    { i: Handshake, t: t.trustBar.d },
+  ];
   return (
     <section className="bg-ink border-y border-white/10">
       <div className="container-luxury py-6">

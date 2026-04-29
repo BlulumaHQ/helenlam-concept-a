@@ -1,4 +1,7 @@
+import { useT } from "@/i18n/LanguageContext";
+
 export function FinalCTA() {
+  const { t } = useT();
   return (
     <section className="relative bg-ink text-white overflow-hidden">
       <div
@@ -9,26 +12,17 @@ export function FinalCTA() {
         }}
       />
       <div className="container-luxury relative section-pad text-center">
-        <span className="text-gold uppercase tracking-eyebrow text-xs">Next Step</span>
+        <span className="text-gold uppercase tracking-eyebrow text-xs">{t.finalCta.eyebrow}</span>
         <h2 className="font-serif text-5xl md:text-7xl mt-6 mb-6 leading-[1.05] max-w-4xl mx-auto">
-          Ready to Take the Next Step?
+          {t.finalCta.title}
         </h2>
-        <p className="text-white/75 text-lg max-w-2xl mx-auto mb-12 font-light">
-          Whether you're searching for the right home or preparing to sell, Helen will guide you
-          with clarity, strategy, and care.
-        </p>
+        <p className="text-white/75 text-lg max-w-2xl mx-auto mb-12 font-light">{t.finalCta.sub}</p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a
-            href="#lead-capture"
-            className="inline-flex items-center justify-center bg-gold text-ink font-semibold px-10 py-5 rounded-sm hover:opacity-90 transition-smooth shadow-luxury"
-          >
-            Get Exclusive Listings
+          <a href="#lead-capture" className="inline-flex items-center justify-center bg-gold text-ink font-semibold px-10 py-5 rounded-sm hover:opacity-90 transition-smooth shadow-luxury">
+            {t.finalCta.ctaA}
           </a>
-          <a
-            href="#evaluation"
-            className="inline-flex items-center justify-center border border-white/40 text-white font-semibold px-10 py-5 rounded-sm hover:bg-white hover:text-ink transition-smooth"
-          >
-            Get Home Value
+          <a href="#evaluation" className="inline-flex items-center justify-center border border-white/40 text-white font-semibold px-10 py-5 rounded-sm hover:bg-white hover:text-ink transition-smooth">
+            {t.finalCta.ctaB}
           </a>
         </div>
       </div>
