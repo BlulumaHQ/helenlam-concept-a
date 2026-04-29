@@ -1,4 +1,5 @@
 import logo from "@/assets/1ne-collective-logo.png";
+import helenLogo from "@/assets/helen-lam-logo-light.png";
 import mls from "@/assets/mls-reciprocity.gif";
 import { useT } from "@/i18n/LanguageContext";
 
@@ -9,8 +10,7 @@ export function Footer() {
       <div className="container-luxury">
         <div className="grid md:grid-cols-12 gap-10 mb-12">
           <div className="md:col-span-5">
-            <h3 className="font-serif text-white text-3xl tracking-display">Helen Lam</h3>
-            <p className="text-xs text-gold uppercase tracking-eyebrow mt-2 mb-6">Personal Real Estate Corporation</p>
+            <img src={helenLogo} alt="Helen Lam Real Estate" className="h-16 md:h-20 w-auto mb-6" loading="lazy" />
             <p className="text-sm leading-relaxed max-w-md mb-6 font-light">{t.footer.tagline}</p>
             <div className="bg-white/95 inline-flex items-center px-5 py-3 rounded-sm">
               <img src={logo} alt="1NE Collective Realty" className="h-12 w-auto" loading="lazy" />
